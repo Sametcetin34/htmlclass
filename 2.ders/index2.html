@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Başlık </title>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Tablolar</h1>
+    <table align="center" bgcolor="yellow" border="1" cellpadding="7" cellspacing="5" width="75%" height="200"
+        style="border-collapse: collapse; ">
+
+        <caption align="bottom">Öğrenci Notları</caption>
+        <colgroup>
+
+            <col span="1" bgcolor="green">
+
+        </colgroup>
+
+
+
+        <thead>
+            <tr align="center" valign="top" height="200" bgcolor="red" style="color: blue;">
+                <!-- valign top_yukarı  bottom_aşağı  -->
+                <th colspan="3">öğrenci</th>
+                <th>matematik</th>
+                <th>türkçe</th>
+                <th>fizik</th>
+
+            </tr>
+        <tbody align="center">
+            <tr>
+                <td rowspan="2">mustafa</td>
+                <td>90</td>
+                <td>84</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>ayşe</td>
+                <td>34</td>
+                <td>34</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td width="50">hasan</td>
+                <td>45</td>
+                <td>54</td>
+                <td>34</td>
+            </tr>
+
+
+        </tbody>
+        </thead>
+    </table>
+
+    <!-- HTML LISTS -->
+    <!-- unordered list -->
+
+    <ul style="list-style-type:square;">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol type="1" start="50">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ol>
+
+    <dl>
+        <dt>coffe</dt>
+        <dd>black hot drink</dd>
+        <dt>milk</dt>
+        <dd>white cold drink</dd>
+
+    </dl>
+
+    <!-- HTML block/inline -->
+    <p style="border: 1px solid black;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, ut?
+    </p>
+    <div style="border: 1px solid black;">Division</div>
+    <h1 style="border: 1px solid black;"> Başlık</h1>
+
+    <!-- İnline -->
+
+    <a style="border: 1px solid black;" href="http://google.com">Google</a>
+    <a style="border: 1px solid black;" href="http://google.com">Google</a>
+    <b>Kalın kelime</b>
+    <span>Düz bir kelime</span>
+    <p>Bu bir paragraf</p>
+
+    <!-- HTML Entities -->
+    <h3>Entity Name - Entity Number</h3>
+    <h3>&LT; &#60;</h3>
+    <h3>&GT; &#62;</h3>
+    <h3>&copy; &#169;</h3>
+    <h3>&#63;&#64;&#65;</h3>
+    <h3>&#128512;</h3>
+    <h3>&#128513;</h3>
+    <!-- HTML Forms -->
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+
+
+    </form>
+
+    <form>
+        <input type="radio" id="html" name="language" value="html">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="language" id="CSS" value="CSS">
+        <label for="CSS">CSS</label><br>
+        <input type="radio" name="language" id="Javascript" value="Javascript">
+        <label for="Javascript">Javascript</label>
+    </form>
+
+    <form>
+
+        <input type="checkbox" id="vehicele1" name="vehicele1">
+        <label for="vehicele1">I have a bike</label><br>
+        <input type="checkbox" id="vehicele2" name="vehicele2">
+        <label for="vehicele2">I have a car </label>
+        <input type="submit" value="Onayla">
+    </form>
+
+    <form>
+
+        <label>Choose a car</label>
+        <select size="3" multiple>
+            <option value="volvo">volvo</option>
+            <option value="fiat">fiat</option>
+            <option value="audi">audiS</option>
+
+
+        </select>
+
+    </form>
+
+    <form>
+        <textarea rows="10" cols="30">
+        Lütfen Doldurunuz
+    </textarea><br>
+        <button type="button" onclick="alert('Hello world')">Click me</button>
+    </form>
+
+    <form>
+
+        <fieldset>
+            <legend>Personel</legend>
+            <label>First name</label>
+            <input type="text"><br>
+            <label>Last name</label>
+            <input type="text">
+
+
+        </fieldset>
+    </form>
+    <form>
+        <h2>Datalist Element</h2>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    </form>
+<!-- Input Types -->
+<form>
+    <h3>Input Types</h3>
+    <br>
+<label>Enter PAsword</label>
+<input type="password"><br>
+<label>Select your favourite color</label>
+<input type="color"><br>
+<label>Birthday</label>
+<input type="date"><br>
+
+<label>Enter date before 2023-12-31</label>
+<input type="date" max="2023-12-31" min="2022-12-30"><br>
+
+</form>
+
+<form>
+    <input type="email">
+    <input type="submit" value="submit">
+</form>
+<input type="image" src="./metaworld_360.jpg"><br>
+<label>Select file</label>
+<input type="file">
+
+
+
+
+
+
+</body>
+
+</html>
